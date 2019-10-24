@@ -280,6 +280,21 @@ Resources:
       - Key: X-Contact
         Value: !Ref ContactEmail
         PropagateAtLaunch: true
+      - Key: Application
+        Value: 'Enterprise Chef'
+        PropagateAtLaunch: true
+      - Key: Team
+        Value: 'Development and Productivity Tools'
+        PropagateAtLaunch: true
+      - Key: CostCenter
+        Value: '95369'
+        PropagateAtLaunch: true
+      - Key: AssetProtectionLevel
+        Value: '6'
+        PropagateAtLaunch: true
+      - Key: Brand
+        Value: 'eCommerce Platform'
+        PropagateAtLaunch: true
       VPCZoneIdentifier: !Ref ChefServerSubnets
 
   FrontendAutoScaleUpPolicy:

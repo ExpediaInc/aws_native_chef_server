@@ -190,6 +190,16 @@ Resources:
         Value: !Ref ContactDept
       - Key: X-Contact
         Value: !Ref ContactEmail
+      - Key: Application
+        Value: 'Enterprise Chef'
+      - Key: Team
+        Value: 'Development and Productivity Tools'
+      - Key: CostCenter
+        Value: '95369'
+      - Key: AssetProtectionLevel
+        Value: '6'
+      - Key: Brand
+        Value: 'eCommerce Platform'
       UserData:
         "Fn::Base64": !Sub |
           #!/bin/bash -ex
