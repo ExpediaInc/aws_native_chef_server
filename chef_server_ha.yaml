@@ -262,6 +262,9 @@ Resources:
       - Key: Brand
         Value: 'eCommerce Platform'
         PropagateAtLaunch: true
+      - Key: BackupTarget
+        Value: !Ref Route53RecordName
+        PropagateAtLaunch: true
       VPCZoneIdentifier: !Ref ChefServerSubnets
 
 # The rest of the servers work in a scalable ASG based on CPU load
