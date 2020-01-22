@@ -67,6 +67,8 @@ Parameters:
   AlertNotificationTopic:
     Description: SNS topic
     Type: String
+  PrimaryApplication:
+    Type: String
 
 Conditions:
   2ZoneES: !Equals [!Ref ElasticSearchShardCount, 2]
@@ -131,6 +133,16 @@ Resources:
           Value: !Ref ContactDept
         - Key: X-Contact
           Value: !Ref ContactEmail
+        - Key: Application
+          Value: !Ref PrimaryApplication
+        - Key: Team
+          Value: 'Development and Productivity Tools'
+        - Key: CostCenter
+          Value: '95369'
+        - Key: AssetProtectionLevel
+          Value: '6'
+        - Key: Brand
+          Value: 'eCommerce Platform'
 
   # Monitoring
   #########################################################################################

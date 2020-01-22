@@ -86,6 +86,8 @@ Parameters:
   AppLogsGroup:
     Description: The logical name of the Cloudwatch Logs log group for systemn logs
     Type: String
+  PrimaryApplication:
+    Type: String
 
 Metadata:
   cfn-lint:
@@ -191,7 +193,7 @@ Resources:
       - Key: X-Contact
         Value: !Ref ContactEmail
       - Key: Application
-        Value: 'Enterprise Chef'
+        Value: !Ref PrimaryApplication
       - Key: Team
         Value: 'Development and Productivity Tools'
       - Key: CostCenter
