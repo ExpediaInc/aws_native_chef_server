@@ -465,7 +465,7 @@ Resources:
       BlockDeviceMappings:
       - DeviceName: /dev/sda1
         Ebs:
-          VolumeSize: 20
+          VolumeSize: 100
           VolumeType: gp2
           DeleteOnTermination: true
       IamInstanceProfile: !Ref ChefInstanceProfile
