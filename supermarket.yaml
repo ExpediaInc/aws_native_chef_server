@@ -328,7 +328,7 @@ Resources:
           commands:
             01_setup:
               command: !Sub |
-                pip install --upgrade pip
+                pip install --upgrade pip==20.3.4
                 mkdir -p /var/lib/awslogs
                 python /var/cache/marketplace/awslogs-agent-setup.py --region ${AWS::Region} --non-interactive -c /etc/awslogs/awslogs.conf
         final_stage:
